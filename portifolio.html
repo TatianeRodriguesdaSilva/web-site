@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="icon" type="image/x-icon" href="icone.png"> <!--aqui estou chamando o ícone nas abas de navegação-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #4169E1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_portifolio {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #4169E1;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #4169E1;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #4169E1 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #4169E1;
+            color: white;
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_portifolio {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portifólio</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="educacao.html">Educação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_portifolio"> <!-- estou chamando a foto da página -->
+            <img src="portifolio.png">
+        </aside>
+        
+        <section class="principal">
+            <h1>
+                Acompanhe meu Linkedin
+            </h1>
+            <p>Aqui no meu portifólio quero deixar um link que será direcionado ao meu perfil do
+            Linkedin, para ver os meus certificados de cursos que eu já conclui e acompanhar
+            atualizações no meu perfil.</p>
+            <a href="https://www.linkedin.com/in/tatiane-rodrigues-da-silva/">Linkedin</a> <!-- aqui eu criei um link para chamar uma página com meu linkedin -->
+            <br>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Atividade Prática - Fundamentos da Programação Web</h1>
+    </footer>
+    </div>
+</body>
+
+</html>

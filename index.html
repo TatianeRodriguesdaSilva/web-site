@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="icon" type="image/x-icon" href="icone.png"> <!--aqui estou chamando o ícone nas abas de navegação-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #4169E1; /*Cor no topo da página */
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*o justify esta mantendo meu menu centralizado*/
+            gap: 20px;
+        }
+
+
+        .imagem_mulher {
+            grid-column-start: 1;/*a imagem vai começar na coluna 1 e para na coluna 3*/
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4; /* meio da página*/
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1; /*rodapé azul da página*/
+            grid-column-end: 12;
+            background-color: #4169E1;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #4169E1;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #4169E1 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #4169E1;
+            color: white;
+        }
+
+        /* aqui sera feito uma coluna só quando o site for aberto em um dispositivo móvel, como nao estamos usando bootstrap, precisa dessa query para ficar "responsivo" */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_mulher {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Sobre mim</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li> <!--aqui estou chamando a página sobremim-->
+            <li><a href="educacao.html">Educação</a></li> <!--aqui estou chamando a página educação-->
+            <li><a href="portifolio.html">Portifólio</a></li> <!--aqui estou chamando a página portifolio-->
+            <li><a href="contato.html">Contato</a></li> <!--aqui estou chamando a página contato-->
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_mulher"> <!--fixando a imagem inicial-->
+            <img src="mulher.png">
+            
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Olá, tudo bem?
+            </h1>
+            <p>Meu nome é Tatiane, eu tenho 28 anos e estudo Análise e Desenvolvimento na UNINTER.
+            Meus hobbies são muitos, eu gosto de praticar musculação diariamente, amo fotografia
+            porque ela é capaz de eternizar momentos únicos, estou sempre lendo algum livro, as
+            vezes mais de um, gosto bastante de cozinhar e descobrir novos sabores de alimentos,
+            além de que é impressionante ver que a junção de vários elementos pode formar um
+            lindo bolo delicioso e além de, claro, estar sempre ouvindo música, eu tenho uma
+            grande paixão por minerar músicas em sites e descobrir novas melodias viciantes.</p>
+
+            <p>Fique por aqui para descobrir mais informações e quem sabe entrar em contato 
+            para marcar um bate papo, já que estou em busca de novas possibilidades de 
+            explorar meus conhecimentos e colocar em prática tudo que venho aprendendo.</p>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Atividade Prática - Fundamentos da Programação Web</h1>
+    </footer>
+    </div>
+</body>
+
+</html>

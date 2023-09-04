@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+    <link rel="icon" type="image/x-icon" href="icone.png"> <!--aqui estou chamando o ícone nas abas de navegação-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #4169E1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*deixa o menu centralizado*/
+            gap: 20px;
+        }
+
+
+        .imagem_educacao {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #4169E1;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #4169E1;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #4169E1 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #4169E1;
+            color: white;
+        }
+
+        /* aqui sera feito uma coluna só quando o site for aberto em um dispositivo móvel, como nao estamos usando bootstrap, precisa dessa query para ficar "responsivo" */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_educacao {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Educação</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="educacao.html">Educação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_educacao"> <!-- estou chamando a foto da página -->
+            <img src="educacao.png">
+        </aside>
+        
+        <section class="principal">
+            <h1>
+                Oque acha de saber um pouco mais sobre meus conhecimentos?
+            </h1>
+            <p>Eu estou cursando Análise e Desenvolvimento de Sitemas na UNINTER, estou aprendendo
+            mais sobre programação web, além de gostar bastante de Python. Estou fazendo alguns
+            cursos extras no site da Udemy para aperfeiçoar meus conhecimentos e seguir a carreira
+            na área da tecnologia. Esses cursos são: Python, MySQL e um curso para aprender mais
+            sobre testes de software porque eu gostaria de fazer estágio na área de qualidade de
+            software. Conhecimento nunca é demais, então finalizei também um curso sobre metodologias
+            ágeis que é muito necessário.</p>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Atividade Prática - Fundamentos da Programação Web</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
